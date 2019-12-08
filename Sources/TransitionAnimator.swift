@@ -98,7 +98,7 @@ open class TransitionAnimator: NSObject, NSViewControllerPresentationAnimator {
         NSAnimationContext.runAnimationGroup(
             { [unowned self] context in
                 context.duration = self.duration
-                context.timingFunction =  CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+                context.timingFunction =  CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
                 
                 viewController.view.animator().frame = destinationFrame
                 if self.transition.contains(NSViewController.TransitionOptions.crossfade) {
@@ -127,7 +127,7 @@ open class TransitionAnimator: NSObject, NSViewControllerPresentationAnimator {
         NSAnimationContext.runAnimationGroup(
             { [unowned self] context in
                 context.duration = self.duration
-                context.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+                context.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
                 
                 viewController.view.animator().frame = destinationFrame
                 if self.transition.contains(NSViewController.TransitionOptions.crossfade) {
@@ -176,6 +176,8 @@ extension NSViewController.TransitionOptions {
                 return NSViewController.TransitionOptions.slideLeft.slideStartFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
             case .rightToLeft:
                 return NSViewController.TransitionOptions.slideRight.slideStartFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
+            @unknown default:
+                fatalError("Unknown \(NSApp.userInterfaceLayoutDirection)")
             }
         }
         if self.contains(NSViewController.TransitionOptions.slideBackward) {
@@ -184,6 +186,8 @@ extension NSViewController.TransitionOptions {
                 return NSViewController.TransitionOptions.slideRight.slideStartFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
             case .rightToLeft:
                 return NSViewController.TransitionOptions.slideLeft.slideStartFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
+            @unknown default:
+                fatalError("Unknown \(NSApp.userInterfaceLayoutDirection)")
             }
         }
         return fromFrame
@@ -211,6 +215,8 @@ extension NSViewController.TransitionOptions {
                 return NSViewController.TransitionOptions.slideLeft.slideStopFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
             case .rightToLeft:
                 return NSViewController.TransitionOptions.slideRight.slideStopFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
+            @unknown default:
+                fatalError("Unknown \(NSApp.userInterfaceLayoutDirection)")
             }
         }
         if self.contains(NSViewController.TransitionOptions.slideBackward) {
@@ -219,6 +225,8 @@ extension NSViewController.TransitionOptions {
                 return NSViewController.TransitionOptions.slideRight.slideStopFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
             case .rightToLeft:
                 return NSViewController.TransitionOptions.slideLeft.slideStopFrame(fromFrame: fromFrame, keepOriginalSize: keepOriginalSize, originalFrame: originalFrame)
+            @unknown default:
+                fatalError("Unknown \(NSApp.userInterfaceLayoutDirection)")
             }
         }
         return fromFrame
