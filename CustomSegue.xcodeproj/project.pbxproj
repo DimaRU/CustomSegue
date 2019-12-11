@@ -45,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0DBCF423A19F4800CF7F04 /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC15A81D84524D00D10F10 /* ChildWindowSegue.swift */,
+				C4BC15A91D84524D00D10F10 /* DismissSegue.swift */,
+				C4BC15AA1D84524D00D10F10 /* NSViewController+CustomSegue.swift */,
+				C4BC15AB1D84524D00D10F10 /* PresentWithAnimatorSegue.swift */,
+				C4BC15AC1D84524D00D10F10 /* ReplaceWindowContentSegue.swift */,
+				C4BC15AD1D84524D00D10F10 /* SplitViewSegue.swift */,
+				C4BC15AE1D84524D00D10F10 /* TablePopoverSegue.swift */,
+				C4BC15AF1D84524D00D10F10 /* TransitionAnimator.swift */,
+				C4BC15B01D84524D00D10F10 /* TransitionFromViewSegue.swift */,
+				C40299D91D44AC0A007477E4 /* CustomSegue.h */,
+			);
+			path = CustomSegue;
+			sourceTree = "<group>";
+		};
 		C40299CC1D44AC0A007477E4 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +82,6 @@
 		C40299D81D44AC0A007477E4 /* CustomSegue */ = {
 			isa = PBXGroup;
 			children = (
-				C40299D91D44AC0A007477E4 /* CustomSegue.h */,
 				C40299DB1D44AC0A007477E4 /* Info.plist */,
 			);
 			path = CustomSegue;
@@ -74,15 +90,7 @@
 		C4BC15A71D84524D00D10F10 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C4BC15A81D84524D00D10F10 /* ChildWindowSegue.swift */,
-				C4BC15A91D84524D00D10F10 /* DismissSegue.swift */,
-				C4BC15AA1D84524D00D10F10 /* NSViewController+CustomSegue.swift */,
-				C4BC15AB1D84524D00D10F10 /* PresentWithAnimatorSegue.swift */,
-				C4BC15AC1D84524D00D10F10 /* ReplaceWindowContentSegue.swift */,
-				C4BC15AD1D84524D00D10F10 /* SplitViewSegue.swift */,
-				C4BC15AE1D84524D00D10F10 /* TablePopoverSegue.swift */,
-				C4BC15AF1D84524D00D10F10 /* TransitionAnimator.swift */,
-				C4BC15B01D84524D00D10F10 /* TransitionFromViewSegue.swift */,
+				0A0DBCF423A19F4800CF7F04 /* CustomSegue */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -311,7 +319,7 @@
 				INFOPLIST_FILE = CustomSegue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.phimage.CustomSegue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -334,7 +342,7 @@
 				INFOPLIST_FILE = CustomSegue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.phimage.CustomSegue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

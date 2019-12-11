@@ -33,7 +33,9 @@ timeline.xctimeline
 playground.xcworkspace
 
 # Swift Package Manager
-.build/
+/.build
+/Packages
+xcuserdata/
 
 # Carthage
 Carthage/Build
