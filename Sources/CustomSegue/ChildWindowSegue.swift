@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // Segue to present controller in a new NSWindow
 public final class ChildWindowSegue: PresentWithAnimatorSegue {

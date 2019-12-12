@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C40299DA1D44AC0A007477E4 /* CustomSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = C40299D91D44AC0A007477E4 /* CustomSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4BC15B11D84524D00D10F10 /* ChildWindowSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15A81D84524D00D10F10 /* ChildWindowSegue.swift */; };
 		C4BC15B21D84524D00D10F10 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15A91D84524D00D10F10 /* DismissSegue.swift */; };
 		C4BC15B31D84524D00D10F10 /* NSViewController+CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15AA1D84524D00D10F10 /* NSViewController+CustomSegue.swift */; };
@@ -57,7 +56,6 @@
 				C4BC15AE1D84524D00D10F10 /* TablePopoverSegue.swift */,
 				C4BC15AF1D84524D00D10F10 /* TransitionAnimator.swift */,
 				C4BC15B01D84524D00D10F10 /* TransitionFromViewSegue.swift */,
-				C40299D91D44AC0A007477E4 /* CustomSegue.h */,
 			);
 			path = CustomSegue;
 			sourceTree = "<group>";
@@ -82,6 +80,7 @@
 		C40299D81D44AC0A007477E4 /* CustomSegue */ = {
 			isa = PBXGroup;
 			children = (
+				C40299D91D44AC0A007477E4 /* CustomSegue.h */,
 				C40299DB1D44AC0A007477E4 /* Info.plist */,
 			);
 			path = CustomSegue;
@@ -102,7 +101,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40299DA1D44AC0A007477E4 /* CustomSegue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

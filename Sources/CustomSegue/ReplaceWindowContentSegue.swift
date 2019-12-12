@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // Replace contentViewController of sourceController parent NSWindow by destinationController
 open class ReplaceWindowContentSegue: NSStoryboardSegue {

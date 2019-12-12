@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // Simple enum for transition type.
 public enum TransitionType {

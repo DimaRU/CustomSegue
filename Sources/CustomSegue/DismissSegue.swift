@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // Segue to dismiss current from controller. Allow to display in storyboard the action instead of simple IBAction
 open class DismissSegue: NSStoryboardSegue {

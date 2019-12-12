@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // A segue with custom animator.
 // You can configure the animator in `prepareForSegue`

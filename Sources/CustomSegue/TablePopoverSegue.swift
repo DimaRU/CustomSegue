@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // show popover near selected table view raw
 open class TablePopoverSegue: NSStoryboardSegue {

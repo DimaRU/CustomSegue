@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // Segue using parent controller of source and `transitionFromViewController`
 open class TransitionFromViewSegue: NSStoryboardSegue {

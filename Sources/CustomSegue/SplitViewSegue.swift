@@ -21,7 +21,7 @@
  SOFTWARE.
  */
 
-import AppKit
+import Cocoa
 
 // Segue that replace the last split view item if sourceController is in NSSplitViewController
 open class SplitViewSegue: NSStoryboardSegue {
