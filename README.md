@@ -6,8 +6,8 @@
              )](https://developer.apple.com/resources/)
 [![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
              )](https://developer.apple.com/swift)
-[![Issues](https://img.shields.io/github/issues/phimage/CustomSegue.svg?style=flat
-           )](https://github.com/phimage/CustomSegue/issues)
+[![Issues](https://img.shields.io/github/issues/DimaRU/CustomSegue.svg?style=flat
+           )](https://github.com/DimaRU/CustomSegue/issues)
 [![Cocoapod](http://img.shields.io/cocoapods/v/CustomSegue.svg?style=flat)](http://cocoadocs.org/docsets/CustomSegue/)
 
 [<img align="left" src="logo.png" hspace="20">](#logo)
@@ -141,7 +141,7 @@ to learn more.
 1. Add the project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
 
     ```
-    github "phimage/CustomSegue"
+    github "DimaRU/CustomSegue"
     ```
 
 2. Run `carthage update` and follow [the additional steps](https://github.com/Carthage/Carthage#getting-started)
